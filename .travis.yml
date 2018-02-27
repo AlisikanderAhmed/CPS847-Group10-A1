@@ -4,7 +4,9 @@ python:
 # command to run tests
 install:
   - pip install codecov
+  - pip install coverage
 script: 
   - python helloworld.py
+  - coverage run helloworld.py
 after_success:
   - codecov
