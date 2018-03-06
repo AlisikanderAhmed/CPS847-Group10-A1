@@ -5,12 +5,12 @@ python:
 install:
   - pip install codecov
 script: 
-  - python helloworld.py
+  - python mid.py
 after_success:
   - codecov
 deploy:
   provider: s3
-  access_key_id: "AKIAJJ7BOJWQ7L352UHA"
-  secret_access_key: "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"
-  bucket: "cps847grp10"
+  access_key_id: "AKIAIW6HIXAUIZON5AOQ"
+  secret_access_key: "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"
+  bucket: "cps847-6805"
   skip_cleanup: true
